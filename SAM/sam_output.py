@@ -14,12 +14,12 @@ from torch.nn import functional as F
 import argparse
 
 parser = argparse.ArgumentParser(description='SAM Output')
-parser.add_argument('--path', type=str, default="/home/anoke/python/BloodCell-Mask-RCNN/images/Matek-19")
+parser.add_argument('--path', type=str, default="/home/anoke/data/images/Matek-19")
 parser.add_argument('--checkpoint_sam', type=str, default="model/sam_vit_b_01ec64.pth")
 parser.add_argument('--checkpoint_path', type=str, default="SAM/output/epoch_85.pth")
 parser.add_argument('--file_ext', type=str, default="SAM/Matek-19.dat.gz")
 
-# path = '/home/anoke/data/images/Matek-19'
+
 args = parser.parse_args()
 sam ,img_embedding_size= sam_model_registry["vit_b"](image_size=224,num_classes=1,pixel_mean=[215.0322, 187.7592, 200.4668],pixel_std=[41.3047, 56.9191, 21.9522],checkpoint=args.checkpoint_sam)
 sam=sam
