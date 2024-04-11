@@ -1,5 +1,5 @@
 # BC-SAM
-Official PyTorch implementation of Towards Cross-Domain Single Blood Cell Image Classification via Large-Scale LoRA-based Segment Anything Model.
+Official PyTorch implementation of Towards Cross-Domain Single Blood Cell Image Classification via Large-Scale LoRA-based Segment Anything Model (ISBI 2024).
 
 <p align="center">
     <img src="./img/BC-SAM.png" width="90%" />
